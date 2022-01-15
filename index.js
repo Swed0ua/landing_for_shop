@@ -4,17 +4,32 @@ let popup = document.querySelector('.popup');
 let switchClass = '_active';
 let popupEclipse = document.querySelector('.popup__eclipse');
 let HTML = document.querySelector('html');
+let arr = [popupEclipse, popup, HTML];
+let header = document.querySelector('header');
+
+let scrollToUp = 0;
 
 popupClose.addEventListener('click', () => {
-    popup.classList.remove(switchClass);
-    popupEclipse.classList.remove(switchClass);
-    HTML.classList.remove(switchClass);
+    arr.forEach(e => {
+        e.classList.remove(switchClass);
+    })
 })
 
 popupOpen.forEach(e => {
     e.addEventListener('click', ()=>{
-        popup.classList.add(switchClass);
-        popupEclipse.classList.add(switchClass);
-        HTML.classList.add(switchClass);
+        arr.forEach(e => {
+            e.classList.add(switchClass);
+        })
     })
 })
+
+window.addEventListener('scroll', headerSize);
+
+function headerSize () {
+    scrollToUp = window.scrollY;
+    if (scrollToUp > 200){
+        header.classList.add(switchClass)
+    } else {
+        header.classList.remove(switchClass)
+    }
+}
