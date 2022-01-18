@@ -659,12 +659,21 @@ img {
     bottom: 0%;
     width: 60%;
     margin: 0 5%;
+    /* transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%); */
+    text-transform: capitalize;
+    z-index: 5;
+}
+
+.our-works__OG .item__text {
     transform: translate(0, 100%);
     -webkit-transform: translate(0, 100%);
     -moz-transform: translate(0, 100%);
     -ms-transform: translate(0, 100%);
     -o-transform: translate(0, 100%);
-    text-transform: capitalize;
 }
 
 .our-works__item > .item__content:hover
