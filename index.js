@@ -6,6 +6,7 @@ let popupEclipse = document.querySelector('.popup__eclipse');
 let HTML = document.querySelector('html');
 let arr = [popupEclipse, popup, HTML];
 let header = document.querySelector('header');
+let ourWorksItemArr = document.querySelectorAll('.our-works__title');
 
 let scrollToUp = 0;
 
@@ -33,3 +34,10 @@ function headerSize () {
         header.classList.remove(switchClass)
     }
 }
+
+ourWorksItemArr.forEach(element=>{
+    element.addEventListener('click', (event)=>{
+        console.log(element, event);
+        event.path[2].classList.toggle(switchClass);
+    })
+})
