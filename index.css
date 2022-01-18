@@ -844,8 +844,14 @@ footer {
     color: var(--color2);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 10350px) {
     .buttons__ico {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .header__button {
         display: none;
     }
 }
