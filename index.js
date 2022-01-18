@@ -37,7 +37,6 @@ function headerSize () {
 
 ourWorksItemArr.forEach(element=>{
     element.addEventListener('click', (event)=>{
-        console.log(element, event);
         event.path[2].classList.toggle(switchClass);
     })
 })
