@@ -659,13 +659,35 @@ img {
     bottom: 0%;
     width: 60%;
     margin: 0 5%;
-    /* transform: translate(0, 100%);
-    -webkit-transform: translate(0, 100%);
-    -moz-transform: translate(0, 100%);
-    -ms-transform: translate(0, 100%);
-    -o-transform: translate(0, 100%); */
+    padding: 10px 5px;
+    opacity: 0.8;
     text-transform: capitalize;
     z-index: 5;
+    background-color: rgb(167, 162, 21);
+}
+
+.for-child .item__text {
+    background-color: rgb(21, 116, 167);
+}
+
+.for-calians .item__text {
+    background-color: rgb(167, 21, 94);
+}
+
+.for-shop .item__text {
+    background-color: rgb(21, 167, 123);
+}
+
+.for-office .item__text {
+    background-color: rgb(167, 84, 21);
+}
+
+.for-barber .item__text {
+    background-color: rgb(21, 96, 167);
+}
+
+.for-rest .item__text {
+    background-color: rgb(75, 199, 26);
 }
 
 .our-works__OG .item__text {
@@ -674,6 +696,8 @@ img {
     -moz-transform: translate(0, 100%);
     -ms-transform: translate(0, 100%);
     -o-transform: translate(0, 100%);
+    background-color: transparent;
+    padding-bottom: 35px;
 }
 
 .our-works__item > .item__content:hover
@@ -686,6 +710,7 @@ img {
     -moz-transform: translate(0, 0%);
     -ms-transform: translate(0, 0%);
     -o-transform: translate(0, 0%);
+    opacity: 1;
 }
 
 .our-works__eklipse {
@@ -844,7 +869,7 @@ footer {
     color: var(--color2);
 }
 
-@media screen and (max-width: 10350px) {
+@media screen and (max-width: 1035px) {
     .buttons__ico {
         display: none;
     }
